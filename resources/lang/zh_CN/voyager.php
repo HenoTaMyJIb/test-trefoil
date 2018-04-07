@@ -19,9 +19,6 @@ return [
         'auto_increment'         => '自增',
         'browse'                 => '浏览',
         'builder'                => '构建器',
-        'bulk_delete'            => '删除选中',
-        'bulk_delete_confirm'    => '是的, 删除这些',
-        'bulk_delete_nothing'    => '没有选择要删除的内容',
         'cancel'                 => '取消',
         'choose_type'            => '选择类型',
         'click_here'             => '点击这里',
@@ -95,7 +92,7 @@ return [
         'yes_please'             => '好的，就这样做',
     ],
     'login' => [
-        'loggingin'    => '正在登录',
+        'loginin'      => '正在登录',
         'signin_below' => '在下方登录：',
         'welcome'      => '欢迎使用 Voyager - 不可错过的 Laravel 后台管理框架',
     ],

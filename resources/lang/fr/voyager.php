@@ -96,7 +96,7 @@ return [
     ],
 
     'login' => [
-        'loggingin'    => 'Se connecter',
+        'loginin'      => 'Se connecter',
         'signin_below' => 'Connectez-vous ci-dessous :',
         'welcome'      => 'Bienvenue dans Voyager, l\' administration qui manquait à Laravel',
     ],

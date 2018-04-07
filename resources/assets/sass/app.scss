@@ -5,5 +5,16 @@
 // Variables
 @import "variables";
 
+
+
+// @import "theme/_base.scss";
+
+
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+@import "theme/demos/default/plugins.scss";
+@import "theme/core/themes/default.scss";
+@import "theme/core/themes/green3.scss";
+@import "theme/core/_base.scss";
