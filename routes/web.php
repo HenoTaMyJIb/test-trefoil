@@ -39,7 +39,7 @@ Route::get('/alad/{slug}', function ($slug) {
     $field = \App\Field::whereSlug($slug)->firstOrFail();
     
     $title = $field->name;
-    $headerPhoto = url($field->header_photo);
+    $headerPhoto = \Storage::url($field->header_photo);
     $coaches = \App\Coach::whereHas('fields', function ($query) use ($field){
         $query->where('slug', $field->slug);
     })->get();
