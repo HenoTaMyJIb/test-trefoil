@@ -27,10 +27,10 @@
 							<div class="col-sm-2 partner">
 								@if($partner->url)
 									<a href="{{$partner->url}}" target="_blank">
-										<img src="{{url($partner->logo)}}"  width="140">
+										<img src="{{\Storage::url($partner->logo)}}"  width="140">
 									</a>
 								@else
-									<img src="{{url($partner->logo)}}" width="140">
+									<img src="{{\Storage::url($partner->logo)}}" width="140">
 								@endif
 							</div>
 

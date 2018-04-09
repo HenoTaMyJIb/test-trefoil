@@ -10,7 +10,7 @@
                 <div class="cbp-item identity logos">
                     <a href="{{url('pages/'.$slug.'/'.$photo->getFilename())}}" class="cbp-caption cbp-lightbox">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="{{url('pages/'.$slug.'/'.$photo->getFilename())}}" alt="">
+                            <img src="{{\Storage::url('pages/'.$slug.'/'.$photo->getFilename())}}" alt="">
                         </div>
                     </a>
                 </div>

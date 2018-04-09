@@ -50,7 +50,7 @@
                 <div class="c-content-feature-1 wow animate fadeInUp" style="visibility: visible; animation-name: fadeInUp; opacity: 1;">
                     <h3 class="c-font-uppercase c-font-bold">Akrobaatika</h3>
                     <p>
-                        <img src="{{url('images/tumbling.jpg')}}" height="200" alt="">
+                        <img src="{{\Storage::url('images/tumbling.jpg')}}" height="200" alt="">
                     </p>
                     <p class="c-font-thin">
                         Команда выполняет друг за другом акробатические элементы на специальной дорожке.
@@ -61,7 +61,7 @@
                 <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp; opacity: 1;">
                     <h3 class="c-font-uppercase c-font-bold">Trampett</h3>
                     <p>
-                        <img src="{{url('images/trampet.jpg')}}" height="200" alt="">
+                        <img src="{{\Storage::url('images/trampet.jpg')}}" height="200" alt="">
                     </p>
                     <p class="c-font-thin">
                         Команда выполняет прыжки с трампета: сальтовые элементы с вращением. 
@@ -73,7 +73,7 @@
                 <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp; opacity: 1;">
                     <h3 class="c-font-uppercase c-font-bold">Vabaharjutus</h3>
                     <p>
-                        <img src="{{url('images/floor.jpg')}}" height="200" alt="">
+                        <img src="{{\Storage::url('images/floor.jpg')}}" height="200" alt="">
                     </p>
                     <p class="c-font-thin">
                         Команда выполняет упражнение на ковре, которое состоит как из хореографических, так и из акробатических элементов.
