@@ -18,3 +18,14 @@
 @import "theme/core/themes/default.scss";
 @import "theme/core/themes/green3.scss";
 @import "theme/core/_base.scss";
+
+.post-image {
+    overflow: hidden;
+    margin: 0;
+}
+
+.post-image img {
+    width: 100%;
+    margin: -21.875% 0;
+    display: block;
+}

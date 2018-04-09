@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:url" content="{{url('/')}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Trefoil Spordikool" />
+
     <title>{{setting('site.title')}}</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
-    <link href="../../assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />  {{--
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all'
+        rel='stylesheet' type='text/css'>
+    <link href="../../assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" /> {{--
     <link href="../../assets/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" /> --}}
     <link href="../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="../../assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" /> {{--
@@ -22,8 +27,7 @@
 
     <!-- BEGIN: BASE PLUGINS  -->
     <link href="../../assets/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
-     {{--
+    <link href="../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" /> {{--
     <link href="../../assets/plugins/revo-slider/css/layers.css" rel="stylesheet" type="text/css" /> --}} {{--
     <link href="../../assets/plugins/revo-slider/css/navigation.css" rel="stylesheet" type="text/css" /> --}} {{--
     <link href="../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" /> --}} {{--
@@ -55,8 +59,14 @@
 </head>
 
 <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
-
-    @include('layouts.header')
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v2.12&appId=734477006723030&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script> @include('layouts.header')
 
 
 
@@ -128,7 +138,7 @@
     <script src="../../assets/base/js/components-shop.js" type="text/javascript"></script>
     <script src="../../assets/base/js/app.js" type="text/javascript"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             App.init(); // init core
         });
     </script>

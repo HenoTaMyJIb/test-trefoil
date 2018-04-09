@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    setlocale(LC_TIME, 'et_EE');
+    $lastNews = TCG\Voyager\Models\Post::latest()->take(3)->get();
+    return view('welcome', compact('lastNews'));
 });
 
 Route::get('/teamgym', function () {
@@ -64,10 +66,18 @@ Route::get('/show-ruhm', function () {
     return view('fields.layout', compact('title', 'coaches', 'slug'));
 });
 
-Route::get('/uudised/{category?}', function() {
+Route::get('/uudised', function() {
+    setlocale(LC_TIME, 'et_EE');
     $posts = TCG\Voyager\Models\Post::orderBy('featured', 'desc')->latest()->paginate(15);
     
     return view('news', compact('posts'));
+});
+
+Route::get('/uudised/{slug}', function($slug) {
+    setlocale(LC_TIME, 'et_EE');
+    $post = TCG\Voyager\Models\Post::where('slug', $slug)->first();
+    
+    return view('post', compact('post'));
 });
 
 Route::get('/dokumendid', function() {

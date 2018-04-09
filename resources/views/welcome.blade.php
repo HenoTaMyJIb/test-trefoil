@@ -66,7 +66,7 @@
 </section>
 <!-- END: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
 
-<div class="c-content-box c-size-md c-bg-grey-1  ">
+<div class="c-content-box c-size-md c-bg-grey-1">
     <div class="container">
         <!-- <div class="c-content-feature-2-grid" data-auto-height="true" data-mode="base-height">
             <div class="row">
@@ -153,6 +153,54 @@
             <a href="http://services.trefoil.ee/registration" class="btn btn-lg c-theme-btn c-btn-square btn-block">REGISTREERI SPORDIKOOLI</a>
         </p>
 
+    </div>
+</div>
+
+<div class="c-content-box c-size-md">
+    <div class="container">
+        <div class="c-content-title-1">
+            <h3 class="c-font-uppercase c-center c-font-bold">Viimased uudised</h3>
+            <div class="c-line-center"></div>
+        </div>
+
+        <div class="row">
+            @foreach($lastNews as $post)
+            <div class="col-md-4">
+                <div class="c-content-blog-post-card-1 c-option-2 c-bordered">
+                    <div class="c-media c-content-overlay">
+                        <div class="c-overlay-wrapper">
+                            <div class="c-overlay-content">
+                                <a href="{{url('uudised/' . $post->slug)}}">
+                                    <i class="icon-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        @if($post->image)
+                        <img class="c-overlay-object img-responsive" src="{{asset('storage/'.$post->image) }}" alt="">
+                        @else
+                            <img class="c-overlay-object img-responsive" src="{{asset('storage/images/news-default.jpeg') }}" alt="">
+                        @endif
+                    </div>
+                    <div class="c-body">
+                        <div class="c-title c-font-bold c-font-uppercase">
+                            <a href="{{url('uudised/' . $post->slug)}}">{{$post->title}}</a>
+                        </div>
+                        <div class="c-author">
+                            <span class="c-font-uppercase">{{$post->created_at->formatLocalized('%A, %d %B %Y') }}</span>
+                        </div>
+
+                        <div class="c-panel">
+                            <ul class="c-tags c-theme-ul-bg">
+                                @foreach($kewords = explode(', ', $post->meta_keywords) as $keyword)
+                                <li>{{$keyword}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
     </div>
 </div>
 @endsection

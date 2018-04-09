@@ -2,9 +2,13 @@
 
 <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
 	<div class="container">
-		<div class="c-page-title c-pull-left">
-			<h3 class="c-font-uppercase c-font-sbold">Uudised</h3>
-		</div>
+		<ul class="c-page-title c-pull-left c-page-breadcrumbs c-theme-nav c-fonts-regular">
+			<li>
+				<a href="/uudised">Uudised</a>
+			</li>
+			<li>/</li>
+			<li class="c-state_active">{{$post->title}}</li>
+		</ul>
 	</div>
 </div>
 <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
@@ -15,7 +19,6 @@
 		<div class="row">
 			<div class="col-md-9">
 				<div class="c-content-blog-post-1-list">
-					@foreach($posts as $post)
 					<div class="c-media">
 						<div class="c-content-media-2-slider post-image">
 							<img src="{{asset('storage/'.$post->image) }}" alt="{{$post->title}}">
@@ -23,7 +26,7 @@
 					</div>
 					<div class="c-content-blog-post-1" style="background-color: #fbfbfb; padding: 20px;">
 						<div class="c-title c-font-bold c-font-uppercase c-font-green-4">
-							<a href="{{url('uudised/' . $post->slug)}}">{{$post->title}}</a>
+							<p>{{$post->title}}</p>
 						</div>
 
 						<div class="c-panel" style="margin-bottom:20px;">
@@ -42,13 +45,9 @@
 
 							<div class="fb-share-button" data-href="{{url('/uudised/' . $post->slug)}}" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a></div>
 						</div>
-
-
 					</div>
 
-					@endforeach 
-					{{ $posts->links('_pagination') }}
-
+					
 				</div>
 			</div>
 			<div class="col-md-3">

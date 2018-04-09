@@ -8,8 +8,7 @@
             <div class="c-brand c-pull-left">
                 <a href="/" class="c-logo">
                     <img src="{{\Storage::url(setting('site.logo'))}}" alt="{{setting('site.title')}}" class="c-desktop-logo" style="height: 70px">
-                    {{-- <img src="../../assets/base/img/layout/logos/logo-3.png" alt="JANGO" class="c-desktop-logo">
-                    <img src="../../assets/base/img/layout/logos/logo-3.png" alt="JANGO" class="c-desktop-logo-inverse"> --}}
+                    <img src="{{\Storage::url(setting('site.logo'))}}" alt="{{setting('site.title')}}" class="c-desktop-logo-inverse" style="height: 28px">
                     <img src="{{\Storage::url(setting('site.logo'))}}" alt="{{setting('site.title')}}"  style="height: 35px" class="c-mobile-logo">
                 </a>
                 <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
