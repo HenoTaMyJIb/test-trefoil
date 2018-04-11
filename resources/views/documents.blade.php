@@ -12,7 +12,7 @@
     	<div class="container">
             @foreach($finder as $file)
                 <p>
-                    <a href="{{url('Documents/'.$file->getFilename())}}">
+                    <a href="{{url('storage/Documents/'.$file->getFilename())}}">
                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                         {{$file->getFilename()}}
                     </a>

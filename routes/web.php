@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    setlocale(LC_TIME, 'et_EE');
+    setlocale(LC_TIME, 'et_EE.utf8');
     $lastNews = TCG\Voyager\Models\Post::latest()->take(3)->get();
     return view('welcome', compact('lastNews'));
 });
@@ -67,14 +67,14 @@ Route::get('/show-ruhm', function () {
 });
 
 Route::get('/uudised', function() {
-    setlocale(LC_TIME, 'et_EE');
+    setlocale(LC_TIME, 'et_EE.utf8');
     $posts = TCG\Voyager\Models\Post::orderBy('featured', 'desc')->latest()->paginate(15);
     
     return view('news', compact('posts'));
 });
 
 Route::get('/uudised/{slug}', function($slug) {
-    setlocale(LC_TIME, 'et_EE');
+    setlocale(LC_TIME, 'et_EE.utf8');
     $post = TCG\Voyager\Models\Post::where('slug', $slug)->first();
     
     return view('post', compact('post'));

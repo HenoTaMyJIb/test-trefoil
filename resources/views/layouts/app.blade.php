@@ -49,8 +49,7 @@
     <link href="../../assets/demos/default/css/custom.css" rel="stylesheet" type="text/css" /> --}}
     <!-- END THEME STYLES -->
 
-    <link rel="shortcut icon" href="favicon.ico" /> {{--
-    <link rel="stylesheet" href="{{ mix('/css/plugins.css') }}"> --}}
+    <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="{{ mix('/css/components.css') }}">
 
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
