@@ -1,93 +1,75 @@
-@extends('layouts.app')
-@section('content')
-
-    <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
-    	<div class="container">
-    		<div class="c-page-title c-pull-left">
-    			<h3 class="c-font-uppercase c-font-sbold">Tunniplaan</h3>
-    		</div>
-    	</div>
+@extends('layouts.app') @section('content')
+<div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
+    <div class="container">
+        <div class="c-page-title c-pull-left">
+            <h3 class="c-font-uppercase c-font-sbold">Tunniplaan</h3>
+        </div>
     </div>
-    <div class="c-content-box c-size-md c-bg-white">
-    	<div class="container">
-                <div class="timetable"></div>
+</div>
+<div class="c-content-box c-size-md c-bg-white">
+    <div class="container">
+        <div>
+            <h3>Mudilaste võimlemine</h3>
             <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Esmaspäev</th>
-                        <th>Teisipäev</th>
-                        <th>Kolmapäev</th>
-                        <th>Neljapäev</th>
-                        <th>Reede</th>
-                        <th>Laupäev</th>
-                        <th>Pühapäev</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>10:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Team Gym (5-7 aastased)</td>
-                        <td class="success">Mudilased (2-3 aastat)</td>
-                    </tr>
-                     <tr>
-                        <th>11:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="info">Show rühm</td>
-                        <td class="success">Mudilased (3-4 aastat)</td>
-                    </tr>
-                     <tr>
-                        <th>12:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="success">Mudilased (4-5 aastat)</td>
-                    </tr>
-                     <tr>
-                        <th>16:00</th>
-                        <td class="danger">Team Gym (9-12 aastased)</td>
-                        <td class="warning">Harrastusvõimlemine</td>
-                        <td class="danger">Team Gym (9-12 aastased)</td>
-                        <td class="warning">Harrastusvõimlemine</td>
-                        <td class="danger">Team Gym (9-12 aastased)</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                      <tr>
-                        <th>18:00</th>
-                        <td class="info">Team Gym (7-8 aastased)</td>
-                        <td>Team Gym (5-7 aastased)</td>
-                        <td class="info">Team Gym (7-8 aastased)</td>
-                        <td>Team Gym (5-7 aastased)</td>
-                        <td class="info">Team Gym (7-8 aastased)</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                     <tr>
-                        <th>20:00</th>
-                        <td></td>
-                        <td class="info">Show rühm</td>
-                        <td></td>
-                        <td class="info">Show rühm</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <td style="width: 200px;">3 - 4 aastased</td>
+                    <td>P 10:00 - 11:00</td>
+                </tr>
+                <tr>
+                    <td>2 - 3 aastased</td>
+                    <td>P 11:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>4 - 5 aastased</td>
+                    <td>P 12:00 - 13:00</td>
+                </tr>
+            </table>
+
+            <h3>Akrobaatiline võimlemine Team Gym</h3>
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td style="width: 200px;">5 - 7 aastased</td>
+                    <td>T,N 18:00 L 10:00</td>
+                </tr>
+                <tr>
+                    <td>7 - 8 aastased</td>
+                    <td>E,K,R 18:00</td>
+                </tr>
+                <tr>
+                    <td>9 - 12 aastased</td>
+                    <td>E,K,R 16:00</td>
+                </tr>
+            </table>
+
+            <h3>Harrastusvõimlemine</h3>
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td style="width: 200px;">9 - 13 aastased</td>
+                    <td>T,N 16:00</td>
+                </tr>
+            </table>
+
+            <h3>Trampoliini võimlemine ehk batuudi hüpped</h3>
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td style="width: 200px;">8 - 11 aastased</td>
+                    <td>E,K 18:00, L 10:00</td>
+                </tr>
+                <tr>
+                    <td>7 - 8 aastased</td>
+                    <td>E,K 18:00</td>
+                </tr>
+            </table>
+
+            <h3>Trefoil Show Team</h3>
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td style="width: 200px;">8 - 11 aastased</td>
+                    <td>T,N 16:00, L 11:00</td>
+                </tr>
             </table>
         </div>
     </div>
+</div>
 
 @endsection

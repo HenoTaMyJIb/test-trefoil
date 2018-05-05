@@ -5,7 +5,6 @@
  */
 
 require("./bootstrap");
-require("justifiedGallery");
 import gRecaptcha from "@finpo/vue2-recaptcha-invisible";
 
 window.Vue = require("vue");
@@ -35,11 +34,13 @@ const app = new Vue({
     },
 
     mounted() {
-        $(".justified-gallery").justifiedGallery({
-            rowHeight: 90,
-            lastRow: "nojustify",
-            margins: 3
-        });
+        // setTimeout(function() {
+            $(".justified-gallery").justifiedGallery({
+                rowHeight: 90,
+                lastRow: "nojustify",
+                margins: 3
+            });
+        // }, 1000);
     },
 
     methods: {

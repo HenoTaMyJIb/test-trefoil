@@ -2,7 +2,7 @@
 <div id="grid-container" class="cbp justified-gallery hidden-xs">
     @foreach($photos as $photo)
     <div class="cbp-item identity logos">
-        <a href="{{url('pages/'.$slug.'/'.$photo->getFilename())}}" class="cbp-caption cbp-lightbox">
+        <a href="{{url('storage/pages/'.$slug.'/'.$photo->getFilename())}}" class="cbp-caption cbp-lightbox">
             <div class="cbp-caption-defaultWrap">
                 <img src="{{\Storage::url('pages/'.$slug.'/'.$photo->getFilename())}}" alt="">
             </div>

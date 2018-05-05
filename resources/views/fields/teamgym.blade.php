@@ -16,6 +16,11 @@
                                     Akrobaatiline rühmvõimlemine, Euroopas tuntud TeamGym nime all, on oma alguse saanud Põhjamaades, kus seda ala on harrastatud
                                     ligikaudu kolmkümmend aastat. Eestis on alaga tegeletud alates 1995 aastast.
                                 </p>
+                                <p class="c-font-dark">
+                                    Vaata veel 
+                                </p>
+                                <p style="margin-bottom: 0"><a href="http://tgestonia.trefoil.ee" target="_blank">http://tgestonia.trefoil.ee</a></p>
+                                <p><a href="http://www.ueg.org/en/teamgym-ueg" target="_blank">http://www.ueg.org/en/teamgym-ueg</a></p>
                             </div>
                         </div>
                         <div class="c-feature-13-tile">

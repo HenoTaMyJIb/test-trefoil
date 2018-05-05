@@ -18,7 +18,7 @@
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all'
         rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/Justified-Gallery/dist/css/justifiedGallery.min.css" />
     <link href="../../assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
@@ -126,7 +126,7 @@
     <!-- END: THEME SCRIPTS -->
 
     <!-- BEGIN: PAGE SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
+    <script src="/assets/plugins/Justified-Gallery/dist/js/jquery.justifiedGallery.min.js"></script>
     <script src="{{ mix('/js/app.js') }}" type="text/javascript"></script>
     <script src="../../assets/demos/default/js/scripts/revo-slider/slider-4.js" type="text/javascript"></script>
     <script src="../../assets/plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>
