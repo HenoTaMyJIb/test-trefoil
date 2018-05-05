@@ -17,5 +17,10 @@
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
         "vue": "^2.1.10"
+    },
+    "dependencies": {
+        "@finpo/vue2-recaptcha-invisible": "^1.1.4",
+        "justifiedGallery": "^3.7.0",
+        "vue-invisible-recaptcha": "^0.1.2"
     }
 }

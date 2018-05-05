@@ -1,48 +1,47 @@
-<div class="c-no-padding">
+<div class="c-content-box c-size-md c-no-padding c-bg-img-center">
     <div class="c-content-feature-13">
         <div class="row c-reset">
-            <div class="col-md-6 c-bg-white">
-                <div class="c-feature-13-container" style="padding: 15px;">
+            <div class="col-md-6 c-bg-grey">
+                <div class="c-feature-13-container">
+                    <div class="c-content-title-1">
+                        <h3 class="c-font-uppercase c-font-bold">Show rühm</h3>
+                        <div class="c-line-left c-theme-bg"></div>
+                    </div>
                     <div class="row">
                         <div class="c-feature-13-tile">
-                            <i class="icon-users c-theme-font c-font-24"></i>
+                            <i class="icon-info c-theme-font c-font-24"></i>
                             <div class="c-feature-13-content">
-                                <h4 class="c-font-uppercase c-theme-font c-font-bold">Great Teamwork</h4>
-                                <p class="c-font-dark">Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore. Lorem ipsum dolor
-                                    consetuer adipicing sed diam ticidut erat votpat dolore. Lorem ipsum dolor consetuer
-                                    adipicing sed diam ticidut erat votpat dolore</p>
+                                <h4 class="c-font-uppercase c-theme-font c-font-bold">Mis see on?</h4>
+                                <p class="c-font-dark">
+                                    Ootame trenni poisse ja tüdrukuid, kellele meeldib esineda ning kes tahab osa võtta ainulaadsest show programmist. Meie programmid
+                                    ühendavad endas tantsu ja akrobaatilisi elemente.
+                                </p>
                             </div>
                         </div>
                         <div class="c-feature-13-tile">
-                            <i class="icon-heart c-theme-font c-font-24"></i>
                             <div class="c-feature-13-content">
-                                <h4 class="c-font-uppercase c-theme-font c-font-bold">Dedicated Force</h4>
-                                <p class="c-font-dark">Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore. Lorem ipsum dolor
-                                    consetuer adipicing sed diam ticidut erat votpat dolore. Lorem ipsum dolor consetuer
-                                    adipicing sed diam ticidut erat votpat dolore</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="c-content-list-1 c-theme c-font-uppercase">
+                                            <li>Akrobaatika</li>
+                                            <li>Tantsud</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="c-content-list-1 c-theme c-font-uppercase">
+                                            <li>Alates 12 aastast</li>
+                                            <li>Tüdrukud ja poisid</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="c-feature-13-tile">
-                            <i class="icon-fire c-theme-font c-font-24"></i>
-                            <div class="c-feature-13-content">
-                                <h4 class="c-font-uppercase c-theme-font c-font-bold">Never say no</h4>
-                                <p class="c-font-dark">Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore. Lorem ipsum dolor
-                                    consetuer adipicing sed diam ticidut erat votpat dolore. Lorem ipsum dolor consetuer
-                                    adipicing sed diam ticidut erat votpat dolore</p>
-                            </div>
-                        </div>
+                        <a href="http://services.trefoil.ee/registration" class="btn c-theme-btn c-btn-square btn-block">REGISTREERI</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="c-feature-13-container">
-                    <ul class="c-content-list-1 c-theme  c-font-uppercase">
-                        <li>Vanus: alates 12 aastast</li>
-                        <li>painduvist</li>
-                        <li>koordinatsiooni</li>
-                    </ul>
-                    <iframe width="460" height="315" src="https://www.youtube.com/embed/z3YxQn-K_q0" frameborder="0" allowfullscreen></iframe>
-                </div>
+            <div class="col-md-6 c-bg-white" style="display: flex; justify-content: space-around; padding: 60px 0">
+                <iframe width="680" height="450" src="https://www.youtube.com/embed/z3YxQn-K_q0" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>

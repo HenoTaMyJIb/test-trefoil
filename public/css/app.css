@@ -24495,3 +24495,29 @@ h1 {
   display: block;
 }
 
+.justified-gallery > a,
+.justified-gallery > div,
+.justified-gallery > figure {
+  opacity: 1;
+}
+
+.sport-item {
+  text-align: center;
+}
+
+.sport-item .c-content-feature-2:hover {
+  background-color: #dfead1;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.c-content-blog-post-card-1 .c-body .c-title {
+  min-height: 60px;
+}
+
+.news-image {
+  max-height: 220px;
+}
+

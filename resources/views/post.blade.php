@@ -63,22 +63,7 @@
 				</form> --}}
 
 				<div class="c-content-ver-nav">
-					<div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
-						<h3 class="c-font-bold c-font-uppercase">Kategooriad</h3>
-						<div class="c-line-left c-theme-bg"></div>
-					</div>
-					<ul class="c-menu c-arrow-dot1 c-theme">
-						<li>
-							<a href="{{url('uudised/teamgym')}}">Teamgym</a>
-						</li>
-						<li>
-							<a href="{{url('uudised/teamgym')}}">Võistlused</a>
-						</li>
-						<li>
-							<a href="{{url('uudised/kids')}}">Kids</a>
-						</li>
-					</ul>
-
+					
 				</div>
 
 			</div>

@@ -10,6 +10,7 @@
     </div>
     <div class="c-content-box c-size-md c-bg-white">
     	<div class="container">
+                <div class="timetable"></div>
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
@@ -88,4 +89,5 @@
             </table>
         </div>
     </div>
+
 @endsection

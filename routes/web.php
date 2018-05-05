@@ -138,6 +138,8 @@ Route::get('/tunniplaan', function() {
     return view('timetable', compact('events'));
 });
 
+Route::post('/feedback', 'ContactController@create');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

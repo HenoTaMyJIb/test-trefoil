@@ -9,6 +9,7 @@
     <meta property="og:url" content="{{url('/')}}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Trefoil Spordikool" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{setting('site.title')}}</title>
 
@@ -17,44 +18,23 @@
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all'
         rel='stylesheet' type='text/css'>
-    <link href="../../assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" /> {{--
-    <link href="../../assets/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" /> --}}
-    <link href="../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" /> {{--
-    <link href="../../assets/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" /> --}} {{--
-    <link href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css" />
+    <link href="../../assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link href="../../assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN: BASE PLUGINS  -->
     <link href="../../assets/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" /> {{--
-    <link href="../../assets/plugins/revo-slider/css/layers.css" rel="stylesheet" type="text/css" /> --}} {{--
-    <link href="../../assets/plugins/revo-slider/css/navigation.css" rel="stylesheet" type="text/css" /> --}} {{--
-    <link href="../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" /> --}} {{--
-    <link href="../../assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" /> --}} {{--
-    <link href="../../assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" /> --}} {{--
-    <link href="../../assets/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css" /> --}}
+    <link href="../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
     <!-- END: BASE PLUGINS -->
-
-    <!-- BEGIN: PAGE STYLES -->
-    {{--
-    <link href="../../assets/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" type="text/css" /> --}}
-    <!-- END: PAGE STYLES -->
-
-    <!-- BEGIN THEME STYLES -->
-    {{--
-    <link href="../../assets/demos/default/css/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
-    <link href="../../assets/demos/default/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css" />
-    <link href="../../assets/demos/default/css/custom.css" rel="stylesheet" type="text/css" /> --}}
-    <!-- END THEME STYLES -->
 
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="{{ mix('/css/components.css') }}">
 
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-
-
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 
 <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
@@ -65,12 +45,13 @@
             js = d.createElement(s); js.id = id;
             js.src = 'https://connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v2.12&appId=734477006723030&autoLogAppEvents=1';
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script> @include('layouts.header')
+        }(document, 'script', 'facebook-jssdk'));</script> 
+        @include('layouts.header')
 
 
 
 
-    <div class="c-layout-page">
+    <div class="c-layout-page" id="app">
         @yield('content')
     </div>
 
@@ -103,7 +84,8 @@
     <!-- BEGIN: CORE PLUGINS -->
     <!--[if lt IE 9]>
     	<script src="../../assets/global/plugins/excanvas.min.js"></script>
-    	<![endif]-->
+        <![endif]-->
+    
     <script src="../../assets/plugins/jquery.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
@@ -144,6 +126,8 @@
     <!-- END: THEME SCRIPTS -->
 
     <!-- BEGIN: PAGE SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
+    <script src="{{ mix('/js/app.js') }}" type="text/javascript"></script>
     <script src="../../assets/demos/default/js/scripts/revo-slider/slider-4.js" type="text/javascript"></script>
     <script src="../../assets/plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/isotope/imagesloaded.pkgd.min.js" type="text/javascript"></script>
@@ -154,6 +138,7 @@
     <script src="../../assets/demos/default/js/scripts/pages/isotope-gallery.js" type="text/javascript"></script>
     <script src="../../assets/demos/default/js/scripts/pages/fullwidth-gallery.js" type="text/javascript"></script>
     <script src="../../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+    
     <!-- END: PAGE SCRIPTS -->
     <!-- END: LAYOUT/BASE/BOTTOM -->
 </body>
