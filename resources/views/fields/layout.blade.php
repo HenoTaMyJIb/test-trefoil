@@ -20,8 +20,9 @@
                 <h3 class="c-font-uppercase c-font-bold">Treenerid</h3>
                 <div class="c-line-left c-theme-bg"></div>
             </div>
+            @foreach ($coaches->chunk(4) as $chunk)
             <div class="row">
-                @foreach($coaches as $coach)
+                @foreach ($chunk as $coach)
                 <div class="col-md-3 col-sm-6">
                     <div class="c-content-person-1 c-option-2">
                         <div class="c-caption c-content-overlay">
@@ -40,10 +41,8 @@
                     </div>
                 </div>
                 @endforeach
-
-                <!-- End-->
             </div>
-            <!-- End-->
+            @endforeach
         </div>
     </div>
     <!-- END: CONTENT/MISC/TEAM-3 -->

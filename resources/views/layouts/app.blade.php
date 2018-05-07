@@ -20,7 +20,8 @@
         rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/plugins/Justified-Gallery/dist/css/justifiedGallery.min.css" />
     <link href="../../assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link href="../../assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
@@ -39,14 +40,14 @@
 
 <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
     <div id="fb-root"></div>
+    <div id="fb-root"></div>
     <script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v2.12&appId=734477006723030&autoLogAppEvents=1';
+            js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0&appId=143615136271366&autoLogAppEvents=1';
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script> 
-        @include('layouts.header')
+        }(document, 'script', 'facebook-jssdk'));</script> @include('layouts.header')
 
 
 
@@ -85,7 +86,7 @@
     <!--[if lt IE 9]>
     	<script src="../../assets/global/plugins/excanvas.min.js"></script>
         <![endif]-->
-    
+
     <script src="../../assets/plugins/jquery.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
@@ -138,7 +139,7 @@
     <script src="../../assets/demos/default/js/scripts/pages/isotope-gallery.js" type="text/javascript"></script>
     <script src="../../assets/demos/default/js/scripts/pages/fullwidth-gallery.js" type="text/javascript"></script>
     <script src="../../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
-    
+
     <!-- END: PAGE SCRIPTS -->
     <!-- END: LAYOUT/BASE/BOTTOM -->
 </body>
