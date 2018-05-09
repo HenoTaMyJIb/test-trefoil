@@ -21,6 +21,7 @@
     "dependencies": {
         "@finpo/vue2-recaptcha-invisible": "^1.1.4",
         "justifiedGallery": "^3.7.0",
+        "lightgallery.js": "^1.0.2",
         "vue-invisible-recaptcha": "^0.1.2"
     }
 }

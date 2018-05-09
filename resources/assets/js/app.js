@@ -5,6 +5,7 @@
  */
 
 require("./bootstrap");
+require("lightgallery.js");
 import gRecaptcha from "@finpo/vue2-recaptcha-invisible";
 
 window.Vue = require("vue");
@@ -34,13 +35,46 @@ const app = new Vue({
     },
 
     mounted() {
-        // setTimeout(function() {
-            $(".justified-gallery").justifiedGallery({
+        $(".justified-gallery")
+            .justifiedGallery({
                 rowHeight: 90,
                 lastRow: "nojustify",
                 margins: 3
+            })
+            .on("jg.complete", function() {
+                lightGallery(document.getElementById("gallery-container"), {
+                    download: false
+                });
             });
-        // }, 1000);
+
+        var $allVideos = $("iframe[src^='//www.youtube.com']"),
+            // The element that is fluid width
+            $fluidEl = $("body");
+
+        // Figure out and save aspect ratio for each video
+        $allVideos.each(function() {
+            $(this)
+                .data("aspectRatio", this.height / this.width)
+
+                // and remove the hard coded width/height
+                .removeAttr("height")
+                .removeAttr("width");
+        });
+
+        // When the window is resized
+        $(window)
+            .resize(function() {
+                var newWidth = $fluidEl.width();
+
+                // Resize all videos according to their own aspect ratio
+                $allVideos.each(function() {
+                    var $el = $(this);
+                    $el.width(newWidth).height(newWidth * $el.data("aspectRatio"));
+                });
+
+                // Kick off one resize to fix all videos on page load
+            })
+            .resize();
     },
 
     methods: {

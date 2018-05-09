@@ -28,7 +28,6 @@
 
     <!-- BEGIN: BASE PLUGINS  -->
     <link href="../../assets/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
     <!-- END: BASE PLUGINS -->
 
     <link rel="shortcut icon" href="/images/favicon.ico" />
@@ -88,7 +87,6 @@
         <![endif]-->
 
     <script src="../../assets/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/jquery.easing.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/reveal-animate/wow.js" type="text/javascript"></script>
@@ -110,14 +108,11 @@
     <script src="../../assets/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
     <script src="../../assets/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
     <script src="../../assets/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/typed/typed.min.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
     <script src="../../assets/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
     <!-- END: LAYOUT PLUGINS -->
 
     <!-- BEGIN: THEME SCRIPTS -->
     <script src="../../assets/base/js/components.js" type="text/javascript"></script>
-    <script src="../../assets/base/js/components-shop.js" type="text/javascript"></script>
     <script src="../../assets/base/js/app.js" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
@@ -130,14 +125,6 @@
     <script src="/assets/plugins/Justified-Gallery/dist/js/jquery.justifiedGallery.min.js"></script>
     <script src="{{ mix('/js/app.js') }}" type="text/javascript"></script>
     <script src="../../assets/demos/default/js/scripts/revo-slider/slider-4.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/isotope/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/isotope/packery-mode.pkgd.min.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/ilightbox/js/jquery.mousewheel.js" type="text/javascript"></script>
-    <script src="../../assets/plugins/ilightbox/js/ilightbox.packed.js" type="text/javascript"></script>
-    <script src="../../assets/demos/default/js/scripts/pages/isotope-gallery.js" type="text/javascript"></script>
-    <script src="../../assets/demos/default/js/scripts/pages/fullwidth-gallery.js" type="text/javascript"></script>
     <script src="../../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
 
     <!-- END: PAGE SCRIPTS -->

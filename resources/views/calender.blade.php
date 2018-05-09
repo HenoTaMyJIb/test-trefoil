@@ -10,6 +10,7 @@
     </div>
     <div class="c-content-box c-size-md c-bg-white">
     	<div class="container">
+            <h1 class="c-font-green-1">Kalender {{date('Y')}}</h1>
             <table class="table table-hover">
             <tbody>
                 @foreach($events as $event)

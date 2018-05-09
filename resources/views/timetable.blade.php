@@ -9,7 +9,7 @@
 <div class="c-content-box c-size-md c-bg-white">
     <div class="container">
         <div>
-            <h3>Mudilaste võimlemine</h3>
+            <h1 class="c-font-green-1">Mudilaste võimlemine</h1>
             <table class="table table-bordered table-hover">
                 <tr>
                     <td style="width: 200px;">3 - 4 aastased</td>
@@ -25,7 +25,7 @@
                 </tr>
             </table>
 
-            <h3>Akrobaatiline võimlemine Team Gym</h3>
+            <h1 class="c-font-green-1">Akrobaatiline võimlemine Team Gym</h1>
             <table class="table table-bordered table-hover">
                 <tr>
                     <td style="width: 200px;">5 - 7 aastased</td>
@@ -41,7 +41,7 @@
                 </tr>
             </table>
 
-            <h3>Harrastusvõimlemine</h3>
+            <h1 class="c-font-green-1">Harrastusvõimlemine</h1>
             <table class="table table-bordered table-hover">
                 <tr>
                     <td style="width: 200px;">9 - 13 aastased</td>
@@ -49,7 +49,7 @@
                 </tr>
             </table>
 
-            <h3>Trampoliini võimlemine ehk batuudi hüpped</h3>
+            <h1 class="c-font-green-1">Trampoliini võimlemine ehk batuudi hüpped</h1>
             <table class="table table-bordered table-hover">
                 <tr>
                     <td style="width: 200px;">8 - 11 aastased</td>
@@ -61,7 +61,7 @@
                 </tr>
             </table>
 
-            <h3>Trefoil Show Team</h3>
+            <h1 class="c-font-green-1">Trefoil Show Team</h1>
             <table class="table table-bordered table-hover">
                 <tr>
                     <td style="width: 200px;">8 - 11 aastased</td>

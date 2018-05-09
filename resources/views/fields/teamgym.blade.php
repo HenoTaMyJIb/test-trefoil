@@ -46,8 +46,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 c-bg-white" style="display: flex; justify-content: space-around; padding: 60px 0">
-                <iframe width="680" height="450" src="https://www.youtube.com/embed/Di2_FYoRUnI" frameborder="0" allowfullscreen></iframe>
+            <div class="col-md-6 c-bg-white" style="padding: 20px">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/Di2_FYoRUnI" frameborder="0" allowfullscreen></iframe>
+                @if(isset($photos))
+                    <div id="gallery-container" class="justified-gallery">
+                        @foreach($photos as $photo)
+                            <a href="{{url('storage/pages/'.$slug.'/'.$photo->getFilename())}}" class="" rel="gallery1">
+                                <img src="{{\Storage::url('pages/'.$slug.'/'.$photo->getFilename())}}" alt="">
+                            </a>
+                        @endforeach
+                    </div>
+                @endif 
             </div>
         </div>
     </div>
