@@ -1,4 +1,4 @@
-<div class="c-content-box c-size-md c-no-padding c-bg-img-center">
+<div class="c-content-box c-no-padding  c-bg-img-center">
     <div class="c-content-feature-13">
         <div class="row c-reset c-bg-grey">
             <div class="col-md-6 c-bg-grey">

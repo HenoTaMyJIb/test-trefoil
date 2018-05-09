@@ -2948,7 +2948,7 @@ h1 {
     .c-layout-header .c-brand {
       float: none !important;
       display: block;
-      margin: 20px 15px 21px 15px; }
+      margin: 20px 15px 10px 15px; }
       .c-layout-header .c-brand .c-desktop-logo-inverse {
         display: none; }
       .c-layout-header .c-brand > .c-hor-nav-toggler {
