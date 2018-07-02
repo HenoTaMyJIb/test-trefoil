@@ -1,4 +1,10 @@
-@extends('layouts.app') @section('content')
+@extends('layouts.app')
+@section('og-type'){{ 'article' }}@endsection
+@section('og-title'){{ $post->title }}@endsection
+@section('og-description'){{ str_limit(strip_tags($post->body), 500) }}@endsection
+@section('og-image'){{asset('storage/'.$post->image) }}@endsection
+@section('og-url'){{url()->current() }}@endsection     
+@section('content')
 
 <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
 	<div class="container">

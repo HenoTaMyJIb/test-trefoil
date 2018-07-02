@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:url" content="{{url('/')}}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Trefoil Spordikool" />
+    <meta property="og:type" content="@yield('og-type', 'website' )" />
+    <meta property="og:url" content="@yield('og-url', '/' )" />
+    <meta property="og:title" content="@yield('og-title', 'Trefoil Spordikool' )" />
+    <meta property="og:image" content="@yield('og-image', url('/assets/img/main1.jpg'))" />
+    <meta property="og:description" content="@yield('og-description', 'Trefoil Spordikool. Spordialad: teamgym , trampoliinvõimlemine, mudilaste võimlemine, show rühm. Tule trenni!')" />
+    <meta name="description" content="@yield('og-description', 'Trefoil Spordikool. Spordialad: teamgym , trampoliinvõimlemine, mudilaste võimlemine, show rühm. Tule trenni!')" />
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{setting('site.title')}}</title>
