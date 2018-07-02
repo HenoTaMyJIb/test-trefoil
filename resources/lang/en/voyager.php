@@ -3,7 +3,7 @@
 return [
     'calender_event_type' => [
         'uritus' => 'Üritus',
-        'voislused' => 'Võistlused',
+        'voistlused' => 'Võistlused',
         'laager' => 'Laager',
         'esinemine' => 'Esinemine',
         'koolitus' => 'Koolitus',
