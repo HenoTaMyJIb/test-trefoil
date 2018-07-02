@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-					<div class="fb-page" data-height="550" data-href="https://www.facebook.com/SCTREFOIL" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/SCTREFOIL" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SCTREFOIL">Sport club Trefoil</a></blockquote></div>
+					<div class="fb-page" data-height="750" data-href="https://www.facebook.com/SCTREFOIL" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/SCTREFOIL" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SCTREFOIL">Sport club Trefoil</a></blockquote></div>
 				<!-- BEGIN: CONTENT/BLOG/BLOG-SIDEBAR-1 -->
 				{{--
 				<form action="#" method="post">
