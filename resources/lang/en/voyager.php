@@ -226,6 +226,7 @@ return [
         'title'            => 'Post Title',
         'title_sub'        => 'The title for your post',
         'update'           => 'Update Post',
+        'created_at'       => 'Post Date'
     ],
 
     'database' => [
