@@ -16,9 +16,13 @@
                 @foreach($events as $event)
                     <tr>
                             <th scope="row">{{$event->name}}</th>
-                            <td>{{\Carbon\Carbon::parse($event->start_date)->format('d M Y')}}</td>
+                            @if($event->end_date)
+                                <td>{{\Carbon\Carbon::parse($event->start_date)->format('d M Y')}} - {{\Carbon\Carbon::parse($event->end_date)->format('d M Y')}}</td>
+                            @else
+                                <td>{{\Carbon\Carbon::parse($event->start_date)->format('d M Y')}}</td>
+                            @endif
                             <td>{{$event->address}}</td>
-                            <td>{{$event->type}}</td>
+                            <td>{{trans('voyager.calender_event_type.' . $event->type)}}</td>
                         </tr>
                 @endforeach
             </tbody>

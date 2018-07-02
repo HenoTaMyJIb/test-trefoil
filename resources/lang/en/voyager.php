@@ -1,6 +1,13 @@
 <?php
 
 return [
+    'calender_event_type' => [
+        'uritus' => 'Üritus',
+        'voislused' => 'Võistlused',
+        'laager' => 'Laager',
+        'esinemine' => 'Esinemine',
+        'koolitus' => 'Koolitus',
+    ],  
     'date' => [
         'last_week' => 'Last Week',
         'last_year' => 'Last Year',
