@@ -145,7 +145,13 @@ Route::get('/meist', function() {
 });
 
 Route::get('/tunniplaan', function() {
-    return view('timetable', compact('events'));
+    $content = TCG\Voyager\Models\Page::where('slug', 'tunniplaan')->first();
+    return view('default-page', compact('content'));
+});
+
+Route::get('/hinnad', function() {
+    $content = TCG\Voyager\Models\Page::where('slug', 'hinnad')->first();
+    return view('default-page', compact('content'));
 });
 
 Route::post('/feedback', 'ContactController@create');
