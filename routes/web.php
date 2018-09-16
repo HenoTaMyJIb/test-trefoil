@@ -12,6 +12,16 @@
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/home', function () {
+    setlocale(LC_TIME, 'et_EE.utf8');
+    $lastNews = TCG\Voyager\Models\Post::latest()->take(3)->get();
+    return view('home', compact('lastNews'));
+});
+
+Route::get('/', function () {
     setlocale(LC_TIME, 'et_EE.utf8');
     $lastNews = TCG\Voyager\Models\Post::latest()->take(3)->get();
     return view('welcome', compact('lastNews'));

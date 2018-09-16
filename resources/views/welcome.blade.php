@@ -1,177 +1,145 @@
-@extends('layouts.app') @section('content')
-<!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
-<section class="c-layout-revo-slider c-layout-revo-slider-4" dir="ltr">
-    <div class="tp-banner-container c-theme">
-        <div class="tp-banner rev_slider" data-version="5.0">
-            <ul>
-                <!--BEGIN: SLIDE #1 -->
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-                    <img alt="" src="./assets/img/main1.jpg" data-bgposition="center center" data-bgfit="cover"
-                        data-bgrepeat="no-repeat">
-                    <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500"
-                        data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
-                        data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;" data-splitin="none" data-splitout="none"
-                        data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
-                        <h3 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-white c-block">
-                            Trefoil Spordikool
-                            <br/>
-                            <a href="http://services.trefoil.ee/registration" class="btn c-theme-btn c-btn-square">REGISTREERI</a>
-                        </h3>
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:type" content="@yield('og-type', 'website' )" />
+    <meta property="og:url" content="@yield('og-url', '/' )" />
+    <meta property="og:title" content="@yield('og-title', 'Trefoil Spordikool' )" />
+    <meta property="og:image" content="@yield('og-image', url('/assets/img/main1.jpg'))" />
+    <meta property="og:description" content="@yield('og-description', 'Trefoil Spordikool. Spordialad: teamgym , trampoliinvõimlemine, mudilaste võimlemine, show rühm. Tule trenni!')" />
+    <meta name="description" content="@yield('og-description', 'Trefoil Spordikool. Spordialad: teamgym , trampoliinvõimlemine, mudilaste võimlemine, show rühm. Tule trenni!')" />
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{setting('site.title')}}</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all'
+        rel='stylesheet' type='text/css'>
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="{{ mix('/css/components.css') }}">
+
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background-color: #eee;
+        }
+
+        .full-container {
+            min-height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .full-container h1 {
+            color: green;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-size: 60px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        
+        .boxes {
+            display: flex;
+        }
+        
+        .box {
+            width: 450px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            margin: 0 50px;
+            background-repeat:no-repeat;
+            background-size:cover;
+            box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.8 ), 0 5px 30px rgba(0,0,0,0.7);
+        }
+
+        .box-1 {
+            background-image: url(http://test-trefoil.test/images/logo1.png);
+        }
+
+        .box-2 {
+            background-image: url(http://test-trefoil.test/images/ACCamera_1.png) ;
+        }
+
+        .box:hover {
+            box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.9);
+        }
+
+        .box h2 {
+            text-transform: uppercase;
+            font-size: 26px;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+                @media screen and (max-width: 768px) {
+            .boxes {
+                flex-direction: column;
+            }
+
+            .box {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-container">
+        
+        <div style="margin: auto;">
+            <h1>TREFOIL</h1>
+            <div class="boxes">
+                <a href="{{env('APP_URL')}}/home">
+                    <div class="box box-1">
+                        <h2>Trefoil Spordikool</h2>
                     </div>
-
-                </li>
-                <!--END -->
-
-                <!--BEGIN: SLIDE #2 -->
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-                    <img alt="" src="/assets/img/main2.jpg" data-bgposition="center center" data-bgfit="cover"
-                        data-bgrepeat="no-repeat">
-                    <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500"
-                        data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
-                        data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:600;e:Back.easeInOut;" data-splitin="none" data-splitout="none"
-                        data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
-                        <h3 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-white c-block">
-                            TULE TRENNI
-                        </h3>
-                    </div>
-                </li>
-                <!--END -->
-
-                <!--BEGIN: SLIDE #3 -->
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="700" data-delay="6000" data-thumb="">
-                    <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                    <img alt="" src="/assets/img/main3.jpg" data-bgposition="center center" data-bgfit="cover"
-                        data-bgrepeat="no-repeat" class="visible-xs" />
-
-                    <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500"
-                        data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
-                        data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:600;e:Back.easeInOut;" data-splitin="none" data-splitout="none"
-                        data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
-                        <h3 class="c-main-title-square c-font-55 c-font-bold c-font-center c-font-uppercase c-font-white c-block">
-                            SPORT ON TERVIS
-                        </h3>
-                    </div>
-
-                </li>
-                <!--END -->
-            </ul>
-        </div>
-    </div>
-</section>
-<!-- END: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
-
-<div class="c-content-box c-size-md c-bg-grey-1">
-    <div class="container">
-        <!-- <div class="c-content-feature-2-grid" data-auto-height="true" data-mode="base-height">
-            <div class="row">
-			<div class="col-md-4 col-sm-6 wow animate fadeInLeft" style="visibility: visible; animation-name: fadeInLeft; opacity: 1;">
-				<div class="c-content-step-1 c-opt-1">
-					<div class="c-icon"><span class="c-hr c-hr-first"><span class="c-content-line-icon c-icon-14 c-theme"></span></span></div>
-					<div class="c-title c-font-20 c-font-bold c-font-uppercase">1. Vali spordiala</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 wow animate fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft; opacity: 1;">
-				<div class="c-content-step-1 c-opt-1">
-					<div class="c-icon"><span class="c-hr"><span class="c-content-line-icon c-icon-21 c-theme"></span></span></div>
-					<div class="c-title c-font-20 c-font-bold c-font-uppercase">2. Registreeri</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 wow animate fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft; opacity: 1;">
-				<div class="c-content-step-1 c-opt-1">
-					<div class="c-icon"><span class="c-hr c-hr-last"><span class="c-content-line-icon c-icon-32 c-theme"></span></span></div>
-					<div class="c-title c-font-20 c-font-bold c-font-uppercase">3. Tule trenni</div>
-				</div>
-			</div>
-		</div> -->
-
-        <div class="c-content-title-1">
-            <h3 class="c-font-uppercase c-center c-font-bold">Spordialad</h3>
-            <div class="c-line-center"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.2s">
-                <a href="{{url('alad/teamgym')}}">
-                    <div class="c-content-feature-2" data-height="height" style="height: 100px;">
-                        <h3 class="c-font-uppercase c-font-bold c-title">TEAMGYM</h3>
+                </a>
+                <a href="http://jumpingpark.trefoil.ee/">
+                    <div class="box box-2">
+                        <h2>Trefoil Jumping park</h2>
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.4s">
-                <a href="{{url('alad/trampoliinvoimlemine')}}">
-                    <div class="c-content-feature-2" data-height="height" style="height: 100px;">
-                        <h3 class="c-font-uppercase c-font-bold c-title">Тrampoliinvõimlemine</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.6s">
-                <a href="{{url('alad/mudilased')}}">
-                    <div class="c-content-feature-2" data-height="height" style="height: 100px;">
-                        <h3 class="c-font-uppercase c-font-bold c-title">Mudilaste võimlemine</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.8s">
-                <a href="{{url('alad/show-ruhm')}}">
-                    <div class="c-content-feature-2" data-height="height" style="height: 100px;">
-                        <h3 class="c-font-uppercase c-font-bold c-title">SHOW RÜHM</h3>
-                    </div>
-                </a>
-            </div>
-
         </div>
-        <p class="wow animate fadeInUp" data-wow-delay="0.9s">
-            <a href="http://services.trefoil.ee/registration" class="btn btn-lg c-theme-btn c-btn-square btn-block">REGISTREERI SPORDIKOOLI</a>
-        </p>
-
-    </div>
-</div>
-
-<div class="c-content-box c-size-md">
-    <div class="container">
-        <div class="c-content-title-1">
-            <h3 class="c-font-uppercase c-center c-font-bold">Viimased uudised</h3>
-            <div class="c-line-center"></div>
-        </div>
-
-        <div class="row">
-            @foreach($lastNews as $post)
-            <div class="col-md-4 wow animate fadeIn">
-                <div class="c-content-blog-post-card-1 c-option-2 c-bordered">
-                    <div class="c-media c-content-overlay  news-image">
-                        <div class="c-overlay-wrapper">
-                            <div class="c-overlay-content">
-                                <a href="{{url('uudised/' . $post->slug)}}">
-                                    <i class="icon-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                        @if($post->image)
-                        <img class="c-overlay-object img-responsive" src="{{asset('storage/'.$post->image) }}" alt="">
-                        @else
-                            <img class="c-overlay-object img-responsive news-image" src="{{asset('storage/images/news-default.jpeg') }}" alt="">
-                        @endif
-                    </div>
-                    <div class="c-body">
-                        <div class="c-title c-font-bold c-font-uppercase">
-                            <a href="{{url('uudised/' . $post->slug)}}">{{$post->title}}</a>
-                        </div>
-                        <div class="c-author">
-                            <span class="c-font-uppercase">{{$post->created_at->formatLocalized('%A, %d %B %Y') }}</span>
-                        </div>
-
-                        <div class="c-panel">
-                            <ul class="c-tags c-theme-ul-bg">
-                                @foreach($kewords = explode(', ', $post->meta_keywords) as $keyword)
-                                <li>{{$keyword}}</li>
-                                @endforeach
-                            </ul>
+        <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-6 -->
+        <footer class="c-layout-footer c-layout-footer-6 c-bg-grey-1" style="padding-top: 0">
+            <div class="c-postfooter c-bg-dark-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 c-col">
+                            <p class="c-copyright c-font-grey">{{date('Y')}} &copy; {{setting('site.title')}}
+                            </p>
                         </div>
                     </div>
                 </div>
+
             </div>
-            @endforeach
-        </div>
+
+        </footer>
     </div>
-</div>
-@endsection
+    <!-- END: LAYOUT/FOOTERS/FOOTER-6 -->
+</body>
+
+</html>
