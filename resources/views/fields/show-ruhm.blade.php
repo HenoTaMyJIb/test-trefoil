@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="http://services.trefoil.ee/registration" class="btn c-theme-btn c-btn-square btn-block">REGISTREERI</a>
+                        <a href="http://services.trefoil.ee/registration" class="btn c-theme-btn c-btn-square btn-block">REGISTREERI TRENNI</a>
                     </div>
                 </div>
             </div>

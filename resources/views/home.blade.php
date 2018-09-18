@@ -15,7 +15,7 @@
                         <h3 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-white c-block">
                             Trefoil Spordikool
                             <br/>
-                            <a href="http://services.trefoil.ee/registration" class="btn c-theme-btn c-btn-square">REGISTREERI</a>
+                            <a href="http://services.trefoil.ee/registration" class="btn c-theme-btn c-btn-square">REGISTREERI TRENNI</a>
                         </h3>
 
                     </div>
@@ -25,7 +25,7 @@
 
                 <!--BEGIN: SLIDE #2 -->
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-                    <img alt="" src="/assets/img/main2.jpg" data-bgposition="center center" data-bgfit="cover"
+                    <img alt="" src="/assets/img/main1.jpg" data-bgposition="center center" data-bgfit="cover"
                         data-bgrepeat="no-repeat">
                     <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500"
                         data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
@@ -41,7 +41,7 @@
                 <!--BEGIN: SLIDE #3 -->
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="700" data-delay="6000" data-thumb="">
                     <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                    <img alt="" src="/assets/img/main3.jpg" data-bgposition="center center" data-bgfit="cover"
+                    <img alt="" src="/assets/img/main1.jpg" data-bgposition="center center" data-bgfit="cover"
                         data-bgrepeat="no-repeat" class="visible-xs" />
 
                     <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500"
@@ -121,7 +121,7 @@
 
         </div>
         <p class="wow animate fadeInUp" data-wow-delay="0.9s">
-            <a href="http://services.trefoil.ee/registration" class="btn btn-lg c-theme-btn c-btn-square btn-block">REGISTREERI SPORDIKOOLI</a>
+            <a href="http://services.trefoil.ee/registration" class="btn btn-lg c-theme-btn c-btn-square btn-block">REGISTREERI TRENNI</a>
         </p>
 
     </div>
