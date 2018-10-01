@@ -17,7 +17,7 @@
             @foreach ($coaches->chunk(4) as $chunk)
             <div class="row">
                 @foreach ($chunk as $coach)
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 c-margin-b-30">
                     <div class="c-content-person-1 c-option-2">
                         <div class="c-caption c-content-overlay">
                             <img class="c-overlay-object img-responsive" src="{{\Storage::url($coach->picture)}}" alt="">
