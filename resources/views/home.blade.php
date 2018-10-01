@@ -15,7 +15,7 @@
                         <h3 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-white c-block">
                             Trefoil Spordikool
                             <br/>
-                            <a href="http://registreeri.trefoil.ee/registration" class="btn c-theme-btn c-btn-square">REGISTREERI TRENNI</a>
+                            <a href="http://registreeri.trefoil.ee" class="btn c-theme-btn c-btn-square">REGISTREERI TRENNI</a>
                         </h3>
 
                     </div>
@@ -121,7 +121,7 @@
 
         </div>
         <p class="wow animate fadeInUp" data-wow-delay="0.9s">
-            <a href="http://registreeri.trefoil.ee/registration" class="btn btn-lg c-theme-btn c-btn-square btn-block">REGISTREERI TRENNI</a>
+            <a href="http://registreeri.trefoil.ee" class="btn btn-lg c-theme-btn c-btn-square btn-block">REGISTREERI TRENNI</a>
         </p>
 
     </div>
