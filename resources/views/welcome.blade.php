@@ -123,21 +123,7 @@
                 </a>
             </div>
         </div>
-        <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-6 -->
-        <footer class="c-layout-footer c-layout-footer-6 c-bg-grey-1" style="padding-top: 0">
-            <div class="c-postfooter c-bg-dark-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 c-col">
-                            <p class="c-copyright c-font-grey">{{date('Y')}} &copy; {{setting('site.title')}}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </footer>
+        
     </div>
     <!-- END: LAYOUT/FOOTERS/FOOTER-6 -->
 </body>
