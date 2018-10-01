@@ -138,34 +138,28 @@
             @foreach($lastNews as $post)
             <div class="col-md-4 wow animate fadeIn">
                 <div class="c-content-blog-post-card-1 c-option-2 c-bordered">
-                    <div class="c-media c-content-overlay  news-image">
-                        <div class="c-overlay-wrapper">
-                            <div class="c-overlay-content">
-                                <a href="{{url('uudised/' . $post->slug)}}">
-                                    <i class="icon-link"></i>
-                                </a>
+                    <a href="{{url('uudised/' . $post->slug)}}">
+                        <div class="c-media c-content-overlay  news-image">
+                            <div class="c-overlay-wrapper">
+                                <div class="c-overlay-content">
+                                    
+                                        <i class="icon-link"></i>
+                                    
+                                </div>
                             </div>
+                            @if($post->image)
+                            <img class="c-overlay-object img-responsive" src="{{asset('storage/'.$post->image) }}" alt="">
+                            @else
+                                <img class="c-overlay-object img-responsive news-image" src="{{asset('storage/images/news-default.jpeg') }}" alt="">
+                            @endif
                         </div>
-                        @if($post->image)
-                        <img class="c-overlay-object img-responsive" src="{{asset('storage/'.$post->image) }}" alt="">
-                        @else
-                            <img class="c-overlay-object img-responsive news-image" src="{{asset('storage/images/news-default.jpeg') }}" alt="">
-                        @endif
-                    </div>
+                    </a>
                     <div class="c-body">
                         <div class="c-title c-font-bold c-font-uppercase">
                             <a href="{{url('uudised/' . $post->slug)}}">{{$post->title}}</a>
                         </div>
                         <div class="c-author">
                             <span class="c-font-uppercase">{{$post->created_at->formatLocalized('%A, %d %B %Y') }}</span>
-                        </div>
-
-                        <div class="c-panel">
-                            <ul class="c-tags c-theme-ul-bg">
-                                @foreach($kewords = explode(', ', $post->meta_keywords) as $keyword)
-                                <li>{{$keyword}}</li>
-                                @endforeach
-                            </ul>
                         </div>
                     </div>
                 </div>

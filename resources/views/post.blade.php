@@ -39,11 +39,6 @@
 							<div class="c-date">
 								<span class="c-font-uppercase">{{$post->created_at->formatLocalized('%A, %d %B %Y') }}</span>
 							</div>
-							<ul class="c-tags c-theme-ul-bg">
-								@foreach($kewords = explode(', ', $post->meta_keywords) as $keyword)
-								<li>{{$keyword}}</li>
-								@endforeach
-							</ul>
 						</div>
 
 						<div class="c-desc">
