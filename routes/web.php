@@ -154,6 +154,11 @@ Route::get('/hinnad', function() {
     return view('default-page', compact('content'));
 });
 
+Route::get('/proovitrennide-tunniplaan', function() {
+    $content = TCG\Voyager\Models\Page::where('slug', 'proovitrennide-tunniplaan')->first();
+    return view('default-page', compact('content'));
+});
+
 Route::post('/feedback', 'ContactController@create');
 
 Route::group(['prefix' => 'admin'], function () {
