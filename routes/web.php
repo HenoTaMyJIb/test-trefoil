@@ -149,7 +149,7 @@ Route::get('/tunniplaan', function() {
     return view('default-page', compact('content'));
 });
 
-Route::get('/hinnad', function() {
+Route::get('/hinnakiri', function() {
     $content = TCG\Voyager\Models\Page::where('slug', 'hinnad')->first();
     return view('default-page', compact('content'));
 });
