@@ -23,12 +23,14 @@
                                     </ul>
                             </div>
                         </div>
-                        <a href="http://registreeri.trefoil.ee" class="btn c-theme-btn c-btn-square btn-block">REGISTREERI TRENNI</a>
+                        <a href="http://registreeri.trefoil.ee" class="btn c-theme-btn c-btn-square btn-block">REGISTREERI PROOVITRENNI</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 c-bg-white" style="padding: 20px">
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/T3qzymwJEgA" frameborder="0" allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T3qzymwJEgA" frameborder="0" allowfullscreen></iframe>
+                </div>
                 @if(isset($photos))
                     <div id="gallery-container" class="justified-gallery">
                         @foreach($photos as $photo)

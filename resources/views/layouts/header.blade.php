@@ -6,7 +6,7 @@
         <!-- BEGIN: BRAND -->
         <div class="c-navbar-wrapper clearfix">
             <div class="c-brand c-pull-left">
-                <a href="/home" class="c-logo">
+                <a href="/avaleht" class="c-logo">
                     <img src="{{\Storage::url(setting('site.logo'))}}" alt="{{setting('site.title')}}" class="c-desktop-logo" style="height: 70px">
                     <img src="{{\Storage::url(setting('site.logo'))}}" alt="{{setting('site.title')}}" class="c-desktop-logo-inverse" style="height: 28px">
                     <img src="{{\Storage::url(setting('site.logo'))}}" alt="{{setting('site.title')}}"  style="height: 35px" class="c-mobile-logo">

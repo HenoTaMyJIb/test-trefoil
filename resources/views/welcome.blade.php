@@ -111,7 +111,7 @@
         <div style="margin: auto;">
             <h1>TREFOIL</h1>
             <div class="boxes">
-                <a href="{{env('APP_URL')}}/home">
+                <a href="{{env('APP_URL')}}/avaleht">
                     <div class="box box-1">
                         <h2>Trefoil Spordikool</h2>
                     </div>

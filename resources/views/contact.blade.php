@@ -19,7 +19,9 @@
 					<i class="icon-envelope c-theme-font"></i> {{ setting('site.email') }}</div>
 				<div>
 					<i class="socicon socicon-skype c-theme-font"></i> {{ setting('site.skype') }}</div>
-				<div>{!! setting('site.address_iframe') !!}</div>
+				<div class="embed-responsive embed-responsive-16by9">
+					{!! setting('site.address_iframe') !!}
+				</div>
 			</div>
 			<div class="col-md-5">
 				<div class="c-contact">
