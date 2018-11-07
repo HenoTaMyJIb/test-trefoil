@@ -33,7 +33,6 @@ $zindex-backdrop: 10400;
 
 .post-image img {
     width: 100%;
-    margin: -21.875% 0;
     display: block;
 }
 
@@ -60,7 +59,8 @@ $zindex-backdrop: 10400;
 }
 
 .news-image {
-    max-height: 220px;
+    max-height: 200px;
+    min-height: 200px;
 }
 
 .card-coach {
