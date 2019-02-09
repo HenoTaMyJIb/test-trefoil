@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="http://registreeri.trefoil.ee" class="btn c-theme-btn c-btn-square btn-block">REGISTREERI PROOVITRENNI</a>
+                        <a href="https://registreeri.trefoil.ee" class="btn c-theme-btn c-btn-square btn-block">REGISTREERI PROOVITRENNI</a>
                     </div>
                 </div>
             </div>
