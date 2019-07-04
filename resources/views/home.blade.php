@@ -90,37 +90,46 @@
             <div class="c-line-center"></div>
         </div>
         <div class="row">
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.2s">
+            <div class="col-md-12 sport-item wow animate fadeInUp" data-wow-delay="0.1s">
                 <a href="{{url('alad/teamgym')}}">
                     <div class="c-content-feature-2" data-height="height" style="height: 100px;">
                         <h3 class="c-font-uppercase c-font-bold c-title">TEAMGYM</h3>
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.4s">
+        </div>
+        <div class="row">
+            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.2s">
                 <a href="{{url('alad/trampoliinvoimlemine')}}">
                     <div class="c-content-feature-2" data-height="height" style="height: 100px;">
                         <h3 class="c-font-uppercase c-font-bold c-title">Тrampoliinvõimlemine</h3>
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.6s">
+            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.2s">
                 <a href="{{url('alad/mudilased')}}">
                     <div class="c-content-feature-2" data-height="height" style="height: 100px;">
                         <h3 class="c-font-uppercase c-font-bold c-title">Mudilaste võimlemine</h3>
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.8s">
+            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.2s">
                 <a href="{{url('alad/show-ruhm')}}">
                     <div class="c-content-feature-2" data-height="height" style="height: 100px;">
                         <h3 class="c-font-uppercase c-font-bold c-title">SHOW RÜHM</h3>
                     </div>
                 </a>
             </div>
+            <div class="col-md-6 sport-item wow animate fadeInUp" data-wow-delay="0.2s">
+                <a href="{{url('alad/taiskasvanutele')}}">
+                    <div class="c-content-feature-2" data-height="height" style="height: 100px;">
+                        <h3 class="c-font-uppercase c-font-bold c-title">TÄISKASVANUTELE</h3>
+                    </div>
+                </a>
+            </div>
 
         </div>
-        <p class="wow animate fadeInUp" data-wow-delay="0.9s">
+        <p class="wow animate fadeInUp" data-wow-delay="0.6s">
             <a href="https://registreeri.trefoil.ee" class="btn btn-lg c-theme-btn c-btn-square btn-block">REGISTREERI PROOVITRENNI</a>
         </p>
 

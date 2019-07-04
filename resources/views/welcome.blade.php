@@ -31,21 +31,23 @@
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
     <style>
+
         body, html {
-            height: 100%;
+            height: 100vh;
         }
 
         body {
-            margin: 0;
             background-color: #eee;
         }
 
         .full-container {
+            width: 100%;
             min-height: 100%;
-            margin: auto;
+            padding: 0;
+            margin: 0;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
         }
 
         .full-container h1 {
@@ -68,18 +70,18 @@
             flex-direction: column;
             justify-content: space-around;
             text-align: center;
-            margin: 0 50px;
+            margin: 0 25px;
             background-repeat:no-repeat;
             background-size:cover;
             box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.8 ), 0 5px 30px rgba(0,0,0,0.7);
         }
 
         .box-1 {
-            background-image: url(http://test-trefoil.test/images/logo1.png);
+            background-image: url(http://test-trefoil.test/images/trefoil.jpg);
         }
 
         .box-2 {
-            background-image: url(http://test-trefoil.test/images/ACCamera_1.png) ;
+            background-image: url(http://test-trefoil.test/images/jumpingpark.jpg) ;
         }
 
         .box:hover {
@@ -88,18 +90,20 @@
 
         .box h2 {
             text-transform: uppercase;
-            font-size: 26px;
+            font-size: 30px;
             color: white;
-            letter-spacing: 2px;
+            letter-spacing: 6px;
         }
 
-                @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             .boxes {
                 flex-direction: column;
             }
 
             .box {
                 margin: 20px;
+                max-width: 320px;
+                max-height: 320px;
             }
         }
     </style>
@@ -107,8 +111,7 @@
 
 <body>
     <div class="full-container">
-        
-        <div style="margin: auto;">
+        <div>
             <h1>TREFOIL</h1>
             <div class="boxes">
                 <a href="{{env('APP_URL')}}/avaleht">
@@ -123,7 +126,6 @@
                 </a>
             </div>
         </div>
-        
     </div>
     <!-- END: LAYOUT/FOOTERS/FOOTER-6 -->
 </body>

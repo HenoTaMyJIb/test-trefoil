@@ -47,6 +47,11 @@ Route::get('/trampoliinvoimlemine', function () {
     return view('fields.layout', compact('title', 'coaches', 'slug'));
 });
 
+Route::get('/alad/taiskasvanutele', function() {
+    $content = TCG\Voyager\Models\Page::where('slug', 'taiskasvanutele')->first();
+    return view('default-page', compact('content'));
+});
+
 Route::get('/alad/{slug}', function ($slug) {
     $field = \App\Field::whereSlug($slug)->firstOrFail();
     
