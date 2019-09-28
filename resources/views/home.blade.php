@@ -6,7 +6,7 @@
             <ul>
                 <!--BEGIN: SLIDE #1 -->
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-                    <img alt="" src="./assets/img/main1.jpg" data-bgposition="center center" data-bgfit="cover"
+                    <img alt="" src="./assets/img/main.jpg" data-bgposition="center center" data-bgfit="cover"
                         data-bgrepeat="no-repeat">
                     <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500"
                         data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
@@ -16,7 +16,7 @@
                             Trefoil Spordikool
                             <br/>
                             <a href="https://registreeri.trefoil.ee" class="btn c-theme-btn c-btn-square">REGISTREERI PROOVITRENNI</a>
-                        </h3>
+                            <a href="/tunniplaan" class="btn c-theme-btn c-btn-square">TUNNIPLAAN</a></h3>
 
                     </div>
 
@@ -25,7 +25,7 @@
 
                 <!--BEGIN: SLIDE #2 -->
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-                    <img alt="" src="/assets/img/main1.jpg" data-bgposition="center center" data-bgfit="cover"
+                    <img alt="" src="/assets/img/main.jpg" data-bgposition="center center" data-bgfit="cover"
                         data-bgrepeat="no-repeat">
                     <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500"
                         data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
@@ -41,7 +41,7 @@
                 <!--BEGIN: SLIDE #3 -->
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="700" data-delay="6000" data-thumb="">
                     <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                    <img alt="" src="/assets/img/main1.jpg" data-bgposition="center center" data-bgfit="cover"
+                    <img alt="" src="/assets/img/main.jpg" data-bgposition="center center" data-bgfit="cover"
                         data-bgrepeat="no-repeat" class="visible-xs" />
 
                     <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500"

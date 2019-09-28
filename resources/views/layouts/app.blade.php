@@ -9,7 +9,7 @@
     <meta property="og:type" content="@yield('og-type', 'website' )" />
     <meta property="og:url" content="@yield('og-url', '/' )" />
     <meta property="og:title" content="@yield('og-title', 'Trefoil Spordikool' )" />
-    <meta property="og:image" content="@yield('og-image', url('/assets/img/main1.jpg'))" />
+    <meta property="og:image" content="@yield('og-image', url('/assets/img/main.jpg'))" />
     <meta property="og:description" content="@yield('og-description', 'Trefoil Spordikool. Spordialad: teamgym , trampoliinvõimlemine, mudilaste võimlemine, show rühm. Tule trenni!')" />
     <meta name="description" content="@yield('og-description', 'Trefoil Spordikool. Spordialad: teamgym , trampoliinvõimlemine, mudilaste võimlemine, show rühm. Tule trenni!')" />
 

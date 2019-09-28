@@ -2,7 +2,7 @@
 @section('og-type'){{ 'article' }}@endsection
 @section('og-title'){{ $post->title }}@endsection
 @section('og-description'){{ str_limit(strip_tags($post->body), 500) }}@endsection
-@section('og-image')@if($post->image){{asset('storage/'.$post->image)}}@else{{url('/assets/img/main1.jpg')}}@endif @endsection
+@section('og-image')@if($post->image){{asset('storage/'.$post->image)}}@else{{url('/assets/img/main.jpg')}}@endif @endsection
 @section('og-url'){{url()->current() }}@endsection     
 @section('content')
 
